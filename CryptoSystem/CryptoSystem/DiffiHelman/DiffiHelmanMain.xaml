@@ -1,0 +1,29 @@
+﻿<Window x:Class="CryptoSystem.DiffiHelman.DiffiHelmanMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoSystem.DiffiHelman"
+        mc:Ignorable="d"
+        Title="DiffiHelmanMain" Height="682" Width="678">
+    <Grid Background="#FFD4D4D4">
+        <TextBox x:Name="textP" HorizontalAlignment="Left" Margin="490,136,0,0" Text="0" VerticalAlignment="Top" Width="141" Height="35" FontSize="24" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="56" Margin="537,21,0,0" VerticalAlignment="Top" Width="94" Source="/free-icon-key-4428872.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Margin="97,10,0,0" TextWrapping="Wrap" Text="Вітаємо, дана програма реалізовує протокол передачі СЕКРЕТНОГО КЛЮЧА за допомогою методу Діффі-Хелмана, заповніть поля нище :" VerticalAlignment="Top" Height="120" Width="408" TextAlignment="Center" FontFamily="Sitka Banner" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="39,142,0,0" TextWrapping="Wrap" Text="Введіть число p :" VerticalAlignment="Top" FontFamily="Sitka Banner" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,201,0,0" TextWrapping="Wrap" Text="Введіть число g :" VerticalAlignment="Top" FontFamily="Sitka Banner" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,264,0,0" TextWrapping="Wrap" Text="Придумайте своє секретне число  :" VerticalAlignment="Top" FontFamily="Sitka Banner" FontSize="24" Foreground="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,383,0,0" TextWrapping="Wrap" Text="Ваш публічний ключ дорівнює:" VerticalAlignment="Top" FontFamily="Sitka Banner" FontSize="24" Background="#FF7EFF5B"/>
+        <TextBox x:Name="textG" HorizontalAlignment="Left" Margin="490,200,0,0" Text="0" VerticalAlignment="Top" Width="141" Height="35" FontSize="24" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textPrivateKey" HorizontalAlignment="Left" Margin="490,264,0,0" Text="0" VerticalAlignment="Top" Width="141" Height="35" FontSize="24" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textPublicKeyUser" HorizontalAlignment="Left" Margin="490,378,0,0" Text="0" VerticalAlignment="Top" Width="141" Height="35" FontSize="24" TextAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="32,450,0,0" TextWrapping="Wrap" Text="Введіть публічний ключ співрозмовника :" VerticalAlignment="Top" FontFamily="Sitka Banner" FontSize="24" Background="#FFEEFF86"/>
+        <TextBox x:Name="textPublicKeyOther" HorizontalAlignment="Left" Margin="490,446,0,0" Text="0" VerticalAlignment="Top" Width="141" Height="34" FontSize="24" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,574,0,0" TextWrapping="Wrap" Text="СЕКРЕТНИЙ КЛЮЧ :" VerticalAlignment="Top" FontFamily="Sitka Banner" FontSize="24" Background="Black" Foreground="Red" Height="36" FontStretch="UltraCondensed" TextAlignment="Center" Width="222"/>
+        <TextBox x:Name="textKey" HorizontalAlignment="Left" Margin="490,574,0,0" Text="0" VerticalAlignment="Top" Width="141" Height="35" FontSize="24" TextAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        <Button Content="Отримати мій публічний ключ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="422" Margin="138,318,0,0" FontSize="24" Click="PublicKeyClick"/>
+        <Button Content="Отримати секретний ключ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="422" Margin="138,511,0,0" FontSize="24" Click="SecretKeyClick"/>
+
+
+    </Grid>
+</Window>

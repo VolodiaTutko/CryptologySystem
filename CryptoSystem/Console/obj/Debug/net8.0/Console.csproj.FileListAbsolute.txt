@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\CryptoSystem\Console\bin\Debug\net8.0\Console.exe
+C:\Users\HP\source\repos\CryptoSystem\Console\bin\Debug\net8.0\Console.deps.json
+C:\Users\HP\source\repos\CryptoSystem\Console\bin\Debug\net8.0\Console.runtimeconfig.json
+C:\Users\HP\source\repos\CryptoSystem\Console\bin\Debug\net8.0\Console.dll
+C:\Users\HP\source\repos\CryptoSystem\Console\bin\Debug\net8.0\Console.pdb
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\Console.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\Console.AssemblyInfo.cs
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\Console.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\Console.dll
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\refint\Console.dll
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\Console.pdb
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\Console.genruntimeconfig.cache
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\ref\Console.dll
+C:\Users\HP\source\repos\CryptoSystem\Console\obj\Debug\net8.0\Console.csproj.AssemblyReference.cache

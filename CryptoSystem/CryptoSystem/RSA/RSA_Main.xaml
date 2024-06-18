@@ -1,0 +1,60 @@
+﻿<Window x:Class="CryptoSystem.RSA.RSA_Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoSystem.RSA"
+        mc:Ignorable="d"
+        Title="RSA_Main" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#007acc"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="1" 
+                            CornerRadius="15">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#005a8c"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#FF79D06C">
+        <TextBox x:Name="textBoxForCipher" HorizontalAlignment="Left" Margin="56,115,0,0" TextWrapping="Wrap" Text="Текст..." VerticalAlignment="Top" Width="318" Height="46" RenderTransformOrigin="1,0"/>
+        <TextBox x:Name="textBoxForDeCipher" HorizontalAlignment="Left" Margin="56,241,0,0" TextWrapping="Wrap" Text="Текст..." VerticalAlignment="Top" Width="318" Height="45" IsReadOnly="True"/>
+        <Menu Margin="0,0,0,385" Background="#FFB7B0B0">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Створити" Click="CreateFile_Click"/>
+                <MenuItem Header="Відкрити" Click="OpenFile_Click" />
+                <MenuItem Header="Зберегти" Click="SaveFile_Click" />
+                <MenuItem Header="Друкувати" Click="PrintFile_Click" />
+                <Separator/>
+                <MenuItem Header="Про розробника" Click="AboutDeveloper_Click" />
+                <MenuItem Header="Вихід" Click="Exit_Click"/>
+            </MenuItem>
+        </Menu>
+        <Label Content="Вхідні дані: " HorizontalAlignment="Left" Margin="70,54,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="Yu Gothic UI"/>
+        <Label Content="Вихідні дані" HorizontalAlignment="Left" Margin="56,191,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="Microsoft JhengHei Light"/>
+        <Button Content="Зашифрувати" HorizontalAlignment="Left" Margin="460,170,0,0" VerticalAlignment="Top" Height="32" Width="108" Style="{StaticResource RoundedButtonStyle}" Background="#FF000204" FontWeight="Bold" Click="EncryptButton_Click"/>
+        <Button Content="Розшифрувати" HorizontalAlignment="Left" Margin="588,170,0,0" VerticalAlignment="Top" Height="32" Width="102" Style="{StaticResource RoundedButtonStyle}" Background="#FF000102" FontWeight="Bold" RenderTransformOrigin="0.545,-1.131" Click="DecryptButton_Click"/>
+        <TextBox x:Name="publicKeyBox" HorizontalAlignment="Left" Margin="641,123,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="97" TextAlignment="Center" Height="20"/>
+        <Button Content="Зберегти як" HorizontalAlignment="Left" Margin="56,308,0,0" VerticalAlignment="Top" Width="318" Height="24" Click="SaveFileAs_Click"/>
+        <Label Content="Введіть свій публічний ключ :" HorizontalAlignment="Left" Margin="600,97,0,0" VerticalAlignment="Top" Width="179"/>
+        <Button Content="Використати мій ключ" HorizontalAlignment="Left" Margin="431,115,0,0" VerticalAlignment="Top" Height="32" Width="161" Style="{StaticResource RoundedButtonStyle}" Background="#FF000204" FontWeight="Bold" Click="OwnKey_Click" RenderTransformOrigin="1.917,2.907"/>
+        <TextBox x:Name="textBoxForInfo" HorizontalAlignment="Left" Margin="444,264,0,0" TextWrapping="Wrap" Text="Текст..." VerticalAlignment="Top" Width="318" Height="146" RenderTransformOrigin="1,0"/>
+        <Label Content="Інформація шифрування" HorizontalAlignment="Left" Margin="460,222,0,0" VerticalAlignment="Top" Width="302" FontWeight="Bold" FontSize="20"/>
+
+    </Grid>
+</Window>
+

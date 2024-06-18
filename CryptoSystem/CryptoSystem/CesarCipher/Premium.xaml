@@ -1,0 +1,21 @@
+﻿<Window x:Class="CryptoSystem.CesarCipher.Premium"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoSystem.CesarCipher"
+        mc:Ignorable="d"
+        Title="Premium" Height="450" Width="800">
+    <Grid>
+        <Button Content="XML ФАЙЛ" HorizontalAlignment="Left" Margin="128,82,0,0" VerticalAlignment="Top" Height="40" Width="181" BorderBrush="#FF32FF09" Background="Black" FontWeight="Bold" FontSize="16" Foreground="White" Click="OpenFile_Click"/>
+        <Button Content="Зображення" HorizontalAlignment="Left" Margin="128,144,0,0" VerticalAlignment="Top" Height="40" Width="181" BorderBrush="#FF32FF09" Background="Black" FontWeight="Bold" FontSize="16" Foreground="White"/>
+        <Label Content="Виберіть тип файлу :" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Введіть ключ для зсуву:" HorizontalAlignment="Left" Margin="149,200,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="keyBox" HorizontalAlignment="Left" Margin="170,231,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="97" TextAlignment="Center" Height="20"/>
+        <Button Content="Завантажити зашифрований файл" HorizontalAlignment="Left" Margin="100,348,0,0" VerticalAlignment="Top" Height="32" Width="300" BorderBrush="#FF32FF09" Background="#FF32FF09" FontWeight="Bold" FontSize="16" Foreground="White" Click="SaveCryptoFile_Click"/>
+        <Button Content="Завантажити розшифрований файл" HorizontalAlignment="Left" Margin="432,348,0,0" VerticalAlignment="Top" Height="32" Width="300" BorderBrush="#FF32FF09" Background="#FF32FF09" FontWeight="Bold" FontSize="16" Foreground="White" Click="SaveDeCryptoFile_Click"/>
+        <Button Content="Шифрувати" HorizontalAlignment="Left" Margin="362,82,0,0" VerticalAlignment="Top" Height="40" Width="181" BorderBrush="#FF32FF09" Background="#FF0010FF" FontWeight="Bold" FontSize="16" Foreground="White" Click="Encrypt_Click"/>
+        <Button Content="Дешифрувати" HorizontalAlignment="Left" Margin="362,144,0,0" VerticalAlignment="Top" Height="40" Width="181" BorderBrush="#FF32FF09" Background="#FF0010FF" FontWeight="Bold" FontSize="16" Foreground="White" Click="Decrypt_Click"/>
+
+    </Grid>
+</Window>

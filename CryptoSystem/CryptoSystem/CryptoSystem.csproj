@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="GamaCipher\images.jpg" />
+    <None Remove="GamaCipher\submit-button-transparent-png-pictures-icons-and-28.png" />
+    <None Remove="premium-icons.png" />
+    <None Remove="ukraine.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="7.0.0-alpha.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="GamaCipher\images.jpg" />
+    <Resource Include="GamaCipher\submit-button-transparent-png-pictures-icons-and-28.png" />
+    <Resource Include="premium-icons.png" />
+    <Resource Include="ukraine.png" />
+  </ItemGroup>
+
+</Project>

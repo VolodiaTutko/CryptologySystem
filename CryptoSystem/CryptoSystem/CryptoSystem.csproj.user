@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CesarCipher\Attack.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CesarCipher\CesarMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CesarCipher\FreqTable.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CesarCipher\Premium.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DiffiHelman\DiffiHelmanMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GamaCipher\GammaMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="KnapsackProblem\DialogWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="KnapsackProblem\KnapsackProblemMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RSA\RSA_Main.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TritemiusCipher\TritemiusMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TritemiusCipher\TrithemiusAttack.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CesarCipher\Attack.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CesarCipher\CesarMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CesarCipher\FreqTable.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CesarCipher\Premium.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DiffiHelman\DiffiHelmanMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GamaCipher\GammaMainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="KnapsackProblem\DialogWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="KnapsackProblem\KnapsackProblemMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RSA\RSA_Main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TritemiusCipher\TritemiusMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TritemiusCipher\TrithemiusAttack.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

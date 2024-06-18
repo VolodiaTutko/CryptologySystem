@@ -1,0 +1,30 @@
+﻿<Window x:Class="CryptoSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoSystem"
+        mc:Ignorable="d"
+        Title="Вітаємо!" Height="450" Width="800" Background="#FFB1B1B1">
+
+
+
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="333,13,0,0" VerticalAlignment="Top">
+            <TextBlock Text="Інтерфейс даної системи виключно на українській мові!" 
+               Foreground="#FF303031" FontSize="14" FontFamily="Broadway" FontWeight="Bold"/>
+            <Image Source="/ukraine.png" Margin="20,-6,0,0" Width="30" Height="30"/>
+        </StackPanel>
+
+        <Label Content="Вітаємо в нашій криптосистемі!" HorizontalAlignment="Left" Margin="210,115,0,0" VerticalAlignment="Top" Foreground="#FF303031" FontSize="28" FontFamily="Broadway" FontWeight="Bold"/>
+        <Label Content="Виберіть будь ласка з нище наведених шифрів той що потрібний вам:" HorizontalAlignment="Left" Margin="86,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.445,2.101"  Foreground="#FF303031" FontSize="20" FontFamily="Broadway" FontWeight="Bold" Width="714"/>
+        <Button Content="Протокол Діффі-Хелмана №6" HorizontalAlignment="Left" Margin="506,340,0,0" VerticalAlignment="Top" Height="44" Width="224" Background="#FF2EE814" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="{x:Null}" Click="openDiffiClick"/>
+        <Button Content="Шифрування RSA №5  " HorizontalAlignment="Left" Margin="302,340,0,0" VerticalAlignment="Top" Height="44" Width="171" Background="#FF2EE814" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="{x:Null}" Click="openRSA_Click"/>
+        <Button Content="Проблема Рюкзака №4" HorizontalAlignment="Left" Margin="86,340,0,0" VerticalAlignment="Top" Height="44" Width="187" Background="#FFE4003F" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="{x:Null}" Click="KnapsackProblem_Click"/>
+        <Button Content="Шифр Цезаря  №1" HorizontalAlignment="Left" Margin="86,273,0,0" VerticalAlignment="Top" Height="44" Width="187" Background="#FFE4003F" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="{x:Null}" Click="CesarClick"/>
+        <Button Content="Шифр Тритеміуса №2" HorizontalAlignment="Left" Margin="302,273,0,0" VerticalAlignment="Top" Height="44" Width="171" Background="#FFE4003F" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="{x:Null}" Click="TritemiusClick"/>
+        <Button Content="Шифр Гамування №3" HorizontalAlignment="Left" Margin="506,273,0,0" VerticalAlignment="Top" Height="44" Width="224" Background="#FFE4003F" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="{x:Null}" Click="GammaClick"/>
+    </Grid>
+</Window>
+ 

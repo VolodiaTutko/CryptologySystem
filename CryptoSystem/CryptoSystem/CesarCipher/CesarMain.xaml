@@ -1,0 +1,67 @@
+﻿<Window x:Class="CryptoSystem.CesarCipher.CesarMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoSystem.CesarCipher"
+        mc:Ignorable="d"
+         Title="CryptoSystem #1" Height="450" Width="814" Background="#FFB9B9B9">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#007acc"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="1" 
+                            CornerRadius="15">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#005a8c"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <RadioButton x:Name="UK" Content="Українська мова" HorizontalAlignment="Left" Margin="670,118,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White"/>
+        <RadioButton x:Name="EN" Content="Англійська мова" HorizontalAlignment="Left" Margin="670,139,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="textBoxForCipher" HorizontalAlignment="Left" Margin="70,88,0,0" TextWrapping="Wrap" Text="Текст..." VerticalAlignment="Top" Width="318" Height="102" RenderTransformOrigin="1,0"/>
+        <TextBox x:Name="textBoxForDeCipher" HorizontalAlignment="Left" Margin="70,252,0,0" TextWrapping="Wrap" Text="Текст..." VerticalAlignment="Top" Width="318" Height="102" IsReadOnly="True"/>
+        <Menu Margin="0,0,0,385">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Створити" Click="CreateFile_Click"/>
+                <MenuItem Header="Відкрити" Click="OpenFile_Click" />
+                <MenuItem Header="Зберегти" Click="SaveFile_Click" />
+                <MenuItem Header="Друкувати" Click="PrintFile_Click" />
+                <Separator/>
+                <MenuItem Header="Про розробника" Click="AboutDeveloper_Click" />
+                <MenuItem Header="Вихід" Click="Exit_Click"/>
+            </MenuItem>
+        </Menu>
+        <Label Content="Вхідні дані: " HorizontalAlignment="Left" Margin="70,54,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="Yu Gothic UI"/>
+        <Label Content="Вихідні дані" HorizontalAlignment="Left" Margin="70,217,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="Microsoft JhengHei Light"/>
+        <Button Content="Зашифрувати" HorizontalAlignment="Left" Margin="413,145,0,0" VerticalAlignment="Top" Height="32" Width="102" Style="{StaticResource RoundedButtonStyle}" Background="#FF000204" FontWeight="Bold" Click="EncryptButton_Click"/>
+        <Button Content="Розшифрувати" HorizontalAlignment="Left" Margin="532,146,0,0" VerticalAlignment="Top" Height="32" Width="102" Style="{StaticResource RoundedButtonStyle}" Background="#FF000102" FontWeight="Bold" RenderTransformOrigin="0.545,-1.131" Click="DecryptButton_Click"/>
+        <Label Content="Введіть ключ для зсуву:" HorizontalAlignment="Left" Margin="413,65,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="keyBox" HorizontalAlignment="Left" Margin="418,96,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="97" TextAlignment="Center" Height="20"/>
+        <Button Content="Зберегти як" HorizontalAlignment="Left" Margin="70,359,0,0" VerticalAlignment="Top" Width="318" Height="24" Click="SaveFileAs_Click"/>
+        <Button Content="Побудувати частотну таблицю для вхідних даних" HorizontalAlignment="Left" Margin="413,252,0,0" VerticalAlignment="Top" Height="34" Width="340"  Background="#FF0080FF" FontWeight="Bold" Click="FrequanceTable_Click" Foreground="#FFEDDFDF" BorderBrush="{x:Null}"/>
+        <Button Content="Побудувати частотну таблицю для вихідних даних" HorizontalAlignment="Left" Margin="413,291,0,0" VerticalAlignment="Top"  Width="340" Height="34"  Background="#FF0080FF" FontWeight="Bold" Click="FrequanceTable2_Click" Foreground="#FFEDDFDF" BorderBrush="{x:Null}"/>
+        <Button Content="Організувати атаку " HorizontalAlignment="Left" Margin="482,331,0,0" VerticalAlignment="Top"  Height="46" Width="246" Style="{StaticResource RoundedButtonStyle}" Background="#FFD80B0B" FontWeight="Bold" Click="Atack_Click"/>
+        <Button  HorizontalAlignment="Left" Margin="677,65,0,0" VerticalAlignment="Top" Height="32" Width="102" Style="{StaticResource RoundedButtonStyle}" Background="#FF000102" FontWeight="Bold" RenderTransformOrigin="0.545,-1.131" Click="Premium_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="./premium-icons.png" Width="16" Height="16" />
+                <TextBlock Margin="5,0,0,0">Преміум</TextBlock>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>
